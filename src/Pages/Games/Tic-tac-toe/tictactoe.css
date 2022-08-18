@@ -1,0 +1,35 @@
+.marker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 329px;
+  }
+
+.squares{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: hsl(32, 59%, 36%);
+    margin: 4px;
+    transition: 1s;
+  }
+  .squares:hover{
+    background-color: hsl(32, 63%, 23%);
+  }
+#X{
+    background-color: transparent;
+    
+    
+}
+
+#O{
+    background-color: transparent;
+}
+

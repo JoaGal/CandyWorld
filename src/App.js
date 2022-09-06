@@ -6,6 +6,7 @@ import { SelectCandy } from './Pages/Games/Tic-tac-toe/SelectCandy';
 import { Tictactoe } from './Pages/Games/Tic-tac-toe/Tictactoe';
 import { SelectGame } from './Pages/SelectGame/SelectGame';
 import { CandyRain } from './Pages/Games/CandyRain/CandyRain';
+import { NoMatch } from './Pages/NoMatch/NoMatch';
 
 
 export const LoginContext = createContext();
@@ -27,6 +28,7 @@ export const App = () => {
           <Route path='/candyselect' element={<SelectCandy />} />
           <Route path='/candyselect/tic-tac-toe' element={<Tictactoe />} />
           <Route path='/candyrain' element={<CandyRain />} />
+          <Route path='*' element={<NoMatch />} />
         </Routes>
         </LoginContext.Provider>
       </BrowserRouter>

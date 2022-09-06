@@ -43,27 +43,27 @@ export const SelectCandy = () => {
   }
   return (
     <div className='text-center' id='back-selectCandy'>
-      <div className='inline-block md:mr-20 md:ml-0 mr-16 ml-16'>
-        <div className='sm:h-80 sm:w-64 md:mt-40 sm:mt-8 mt-28  rounded-xl bg-pink-800 border-8 border-pink-500'>
-          <p className='text-5xl text-pink-500 mt-8' id='font'>Player 1</p>
-          <img className='sm:mt-16 mt-14 mb-4 sm:mb-0 m-auto h-20' src={allCandys(`./candy-${candys1}.png`)} />
+      <div className='inline-block md:mr-20 sm:ml-2 md:mr-16 sm:mr-10 mr-16 ml-16'>
+        <div className='sm:h-80 sm:w-64 w-48 sm:mt-32 mt-12 h-40  rounded-xl bg-pink-800 border-8 border-pink-500'>
+          <p className='sm:text-5xl text-4xl text-pink-500 sm:mt-8 mt-4' id='font'>Player 1</p>
+          <img className='sm:mt-10 mt-4 mb-4 sm:mb-0 m-auto sm:h-20' src={allCandys(`./candy-${candys1}.png`)} />
         </div>
-        <button onClick={previousCandy1} className='mt-5 mr-5 w-20 h-20 text-pink-500 border-8 border-pink-500 hover:bg-pink-900 rounded-xl bg-pink-800 transition ease-in delay-150 hover:scale-110 duration-300'><BsCaretLeftFill className=' text-pink-500 w-16 h-16' /></button>
-        <button onClick={nextCandy1} className='mt-5 ml-5 w-20 h-20 text-pink-500 border-8 border-pink-500 hover:bg-pink-900 rounded-xl bg-pink-800 transition ease-in delay-150 hover:scale-110 duration-300'><BsCaretRightFill className=' text-pink-500 w-16 h-16' /></button>
+        <button onClick={previousCandy1} className='mt-5 mr-5 sm:w-20 w-16 sm:h-20 h-16 text-pink-500 border-8 border-pink-500 hover:bg-pink-900 rounded-xl bg-pink-800 transition ease-in delay-150 hover:scale-110 duration-300'><BsCaretLeftFill className=' text-pink-500 sm:w-16 w-10 sm:h-16 h-10 pl-2 sm:pl-0' /></button>
+        <button onClick={nextCandy1} className='mt-5 ml-5 sm:w-20 w-16 sm:h-20 h-16 text-pink-500 border-8 border-pink-500 hover:bg-pink-900 rounded-xl bg-pink-800 transition ease-in delay-150 hover:scale-110 duration-300'><BsCaretRightFill className=' text-pink-500 sm:w-16 w-10 sm:h-16 h-10 pl-2 sm:pl-0' /></button>
       </div>
-      <div className='inline-block md:ml-20 md:mr-0  ml-16 mr-16'>
-        <div className='sm:h-80 sm:w-64 mt-32 rounded-xl bg-pink-800 border-8 border-pink-500'>
-          <p className='text-5xl text-pink-500 mt-8' id='font'>Player 2</p>
-          <img className='sm:mt-16 mt-14 mb-4 sm:mb-0 m-auto h-20' src={allCandys(`./candy-${candys2}.png`)} />
+      <div className='inline-block md:ml-20 sm:mr-2 md:ml-16 sm:ml-10 mr-16 ml-16'>
+        <div className='sm:h-80 sm:w-64 w-48 sm:mt-32 mt-8 h-40 rounded-xl bg-pink-800 border-8 border-pink-500'>
+          <p className='sm:text-5xl text-4xl text-pink-500 sm:mt-8 mt-4' id='font'>Player 2</p>
+          <img className='sm:mt-10 mt-4 mb-4 sm:mb-0 m-auto sm:h-20' src={allCandys(`./candy-${candys2}.png`)} />
         </div>
-        <button onClick={previousCandy2} className='mt-5 mr-5 w-20 h-20 text-pink-500 border-8 border-pink-500 hover:bg-pink-900 rounded-xl bg-pink-800 transition ease-in delay-150 hover:scale-110 duration-300'><BsCaretLeftFill className=' text-pink-500 w-16 h-16' /></button>
-        <button onClick={nextCandy2} className='mt-5 ml-5 w-20 h-20 text-pink-500 border-8 border-pink-500 hover:bg-pink-900 rounded-xl bg-pink-800 transition ease-in delay-150 hover:scale-110 duration-300'><BsCaretRightFill className=' text-pink-500 w-16 h-16' /></button>
+        <button onClick={previousCandy2} className='mt-5 mr-5 sm:w-20 w-16 sm:h-20 h-16 text-pink-500 border-8 border-pink-500 hover:bg-pink-900 rounded-xl bg-pink-800 transition ease-in delay-150 hover:scale-110 duration-300'><BsCaretLeftFill className='text-pink-500 sm:w-16 w-10 sm:h-16 h-10 pl-2 sm:pl-0' /></button>
+        <button onClick={nextCandy2} className='mt-5 ml-5 sm:w-20 w-16 sm:h-20 h-16 text-pink-500 border-8 border-pink-500 hover:bg-pink-900 rounded-xl bg-pink-800 transition ease-in delay-150 hover:scale-110 duration-300'><BsCaretRightFill className='text-pink-500 sm:w-16 w-10 sm:h-16 h-10 pl-2 sm:pl-0' /></button>
       </div>
       <Link to='/'>
-      <button id='font' className='absolute bottom-0 left-0 m-5 sm:m-12 block w-40 h-24 text-3xl sm:text-4xl text-yellow-400 border-8 border-yellow-400 hover:bg-yellow-700 rounded-xl bg-yellow-600 transition ease-in delay-150 hover:scale-110 duration-300'>Back</button>
+      <button id='font' className='absolute bottom-0 left-0 m-5 sm:m-12 block sm:w-40 w-24 sm:h-24 text-3xl sm:text-4xl text-yellow-400 border-8 border-yellow-400 hover:bg-yellow-700 rounded-xl bg-yellow-600 transition ease-in delay-150 hover:scale-110 duration-300'>Back</button>
       </Link>
       <Link to='/candyselect/tic-tac-toe'>
-      <button id='font' className='absolute bottom-0 right-0 m-5 sm:m-12 block w-40 h-24 text-3xl sm:text-4xl text-yellow-400 border-8 border-yellow-400 hover:bg-yellow-700 rounded-xl bg-yellow-600 transition ease-in delay-150 hover:scale-110 duration-300'>Start</button>
+      <button id='font' className='absolute bottom-0 right-0 m-5 sm:m-12 block sm:w-40 w-24 sm:h-24 text-3xl sm:text-4xl text-yellow-400 border-8 border-yellow-400 hover:bg-yellow-700 rounded-xl bg-yellow-600 transition ease-in delay-150 hover:scale-110 duration-300'>Start</button>
       </Link>
     </div>
   )

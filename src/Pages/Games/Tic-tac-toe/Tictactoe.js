@@ -56,8 +56,8 @@ export const Tictactoe = () => {
   return (
     <>
       <div id='back-selectCandy' className='text-center'>
-        <div className='marker mt-40'>
-          <h2 id='font' className='mb-10 w-30 pb-10 p-2 pt-10 h-20 text-pink-500 border-8 border-pink-500 rounded-xl bg-pink-800 grid content-center'>{turns === 'X' ? <img src={`${allCandys(`./candy-${candys1}.png`)}`} /> : <img src={`${allCandys(`./candy-${candys2}.png`)}`} />}</h2>
+        <div className='marker sm:mt-40 mt-16'>
+          <h2 id='font' className='mb-10 w-24 pb-10 p-2 pt-10 h-20 text-pink-500 border-8 border-pink-500 rounded-xl bg-pink-800 grid content-center'>{turns === 'X' ? <img src={`${allCandys(`./candy-${candys1}.png`)}`} /> : <img src={`${allCandys(`./candy-${candys2}.png`)}`} />}</h2>
         </div>
         <div className='bg-cyan-900/75 rounded-xl border-2 shadow-md shadow-cyan-800/50 border-cyan-800' id='flex-container' onClick={handelClick}>
           <div className='squares' id={squares[0]}><img className='m-auto mt-5 rounded-md' id='pick' src={candy[0]} /></div>
@@ -73,7 +73,7 @@ export const Tictactoe = () => {
         {winner === '' ? null : (
           <>
           <div className=' w-full h-full absolute inset-0 bg-cyan-900/60'>
-            <div className='inline-block mt-36 w-96 h-auto border-8 border-pink-500 rounded-xl bg-pink-800 text-pink-500'>
+            <div className='inline-block sm:mt-36 mt-10 sm:w-96 w-full sm:h-auto border-8 border-pink-500 rounded-xl bg-pink-800 text-pink-500'>
             <p className=' mt-44  text-5xl' id='font'>Winner</p>
             <img src={winner} className='m-auto sm:mt-4 mt-2 mb-44'/>
             </div>
@@ -82,7 +82,7 @@ export const Tictactoe = () => {
           )
         }
             <Link to='/candyselect'>
-                <button onClick={restart} id='font' className='relative mt-10 inset-0 m-auto block w-40 h-24 text-3xl sm:text-4xl text-yellow-400 border-8 border-yellow-400 hover:bg-yellow-700 rounded-xl bg-yellow-600 transition ease-in delay-150 hover:scale-110 duration-300'>Restart</button>
+                <button onClick={restart} id='font' className='relative mt-10 inset-0 m-auto block sm:w-40 w-32 sm:h-24 h-16 text-3xl sm:text-4xl text-yellow-400 border-8 border-yellow-400 hover:bg-yellow-700 rounded-xl bg-yellow-600 transition ease-in delay-150 hover:scale-110 duration-300'>Restart</button>
             </Link>
       </div>
     </>
